@@ -79,6 +79,10 @@ project(':JediTerm') {
 	}
 }
 
+project(':ChipperToolbox') {
+	apply plugin: 'eclipse'
+}
+
 allprojects {
 	eclipse.classpath.file.withXml { xml ->
 		// this is AWFUL but I couldn't get asNode to work
