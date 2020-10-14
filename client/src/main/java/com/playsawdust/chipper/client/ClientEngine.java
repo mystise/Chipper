@@ -1284,10 +1284,10 @@ public class ClientEngine implements Engine {
 		glColor3f(1, 1, 1);
 		glDisable(GL_TEXTURE_2D);
 		glDisable(GL_DEPTH_TEST);
-		glEnableClientState(GL_VERTEX_ARRAY);
+		glEnable(GL_VERTEX_ARRAY);
 		glVertexPointer(3, GL_FLOAT, (4*4), noticeBuffer);
 		glDrawArrays(GL_QUADS, 0, count*4);
-		glDisableClientState(GL_VERTEX_ARRAY);
+		glDisable(GL_VERTEX_ARRAY);
 	}
 
 	private void kawaseDown(Canvas c, GLProgram shdr, int iter, double div, float ofs, int w, int h) {
