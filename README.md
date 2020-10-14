@@ -12,6 +12,9 @@ Unstable, very unfinished. Hop in #lobby:sleeping.town on Matrix to talk about i
 # Client Eclipse Run Config
 
 After running `./gradlew eclipse`, add a java application run configuration with the following properties:
+
 Project: ChipperClient
+
 Main class: com.playsawdust.chipper.client.ClientBootstrap
+
 VM arguments: --add-opens java.base/jdk.internal.loader=ALL-UNNAMED
